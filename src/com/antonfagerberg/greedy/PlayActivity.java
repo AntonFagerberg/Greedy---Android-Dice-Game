@@ -26,7 +26,7 @@ public class PlayActivity extends Activity {
         BUTTON_SAVE = "com.antonfagerberg.greedy.button_save",
         FIRST_THROW_IN_ROUND = "com.antonfagerberg.greedy.first_trow_in_run";
 
-    private static int
+    private final static int
 	    MAX_SCORE = 10000,
 	    FIRST_ROUND_LIMIT = 300,
 	    DICE_COUNT = 6;
