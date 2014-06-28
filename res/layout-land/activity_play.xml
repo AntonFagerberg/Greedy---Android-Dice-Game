@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+    >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/score" />
+
+            <TextView
+                android:id="@+id/txt_total_score"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/total_score" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+        >
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="toggleDiceButton"
+                android:id="@+id/one"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="toggleDiceButton"
+                android:id="@+id/two"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="toggleDiceButton"
+                android:id="@+id/three"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+        >
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="toggleDiceButton"
+                android:id="@+id/four"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="toggleDiceButton"
+                android:id="@+id/five"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="toggleDiceButton"
+                android:id="@+id/six"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:onClick="saveButtonClick"
+                android:id="@+id/btn_save"
+            />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_score"
+                android:text="@string/button_score"
+                android:onClick="scoreButtonClicked"
+            />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/throw_"
+                android:id="@+id/btn_throw"
+                android:onClick="throwButtonClick"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
